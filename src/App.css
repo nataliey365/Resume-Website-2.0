@@ -1,0 +1,173 @@
+
+.pic{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    outline-width: 20px;
+    outline: auto;
+    outline-color: white;
+
+}
+
+p{
+    font-family: "DM Sans";
+}
+
+.project-text{
+    font-size: large;
+    font-family: "DM Sans";
+}
+
+.itl{
+    font-size: medium;
+    font-family: "DM Sans";
+}
+
+
+.app-sample{
+    height:40%;
+    width:40%;
+}
+
+
+
+
+.intro-div{
+    animation-duration: 2s;
+    animation-name: introSlide;
+ 
+}
+
+.languages{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.script{
+    height:40px;
+    width:40px;
+}
+
+h4{
+    font-family: "DM Sans";
+    color: black;
+}
+
+h1{
+    font-size: 80px;
+    color:black;
+    font-family: "DM Sans";
+
+}
+
+h3{
+    font-size: 40px;
+    font-family:"DM Sans";
+}
+
+
+body{
+    background: linear-gradient(-45deg,	#b5ddff, 	#ffe1ff,	#ebe7ff);
+    background-size: 400% 400%;
+    animation: backgroundGradient 15s ease infinite;
+    height: 100vh;
+}
+
+.icons{
+    height:50px;
+    width:50px;
+    margin: 5px;
+}
+
+.icons:hover{
+    animation-name: spin;
+    animation-duration: 1s;
+}
+
+.arrow-style{
+    height: 10%;
+    width: 10%;
+}
+
+.arrow-overlap{
+    position: absolute;
+    top:10%;
+    left:30%;
+}
+
+.custom-shape-divider-top-1737353066 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+
+
+
+@keyframes introSlide {
+    from {
+        opacity: 0%;
+        margin-left: 10%;
+    }
+
+    to {
+        opacity: 100%;
+        margin-left: 0%;
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes backgroundGradient{
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@media (max-width: 1030px){
+    .pic{
+        width: 300px;
+        height: 300px
+    }
+
+    .profile-img{
+        height: 100%;
+        width: 100%;
+        padding-top: 20%;
+    }
+    .intro-div{
+        text-align: center;
+        height:fit-content;
+        width: fit-content;
+        padding-right: 0%;
+    }
+
+    .profile{
+        padding-top: 2%;
+    }
+    
+    .arrow{
+        padding-bottom: 10px;
+    }
+
+}
